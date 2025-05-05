@@ -1,0 +1,7 @@
+## Interface: 11404
+## Title: AMGitsAuctionStats
+## Author: AMGitsKriss
+## Version: 1.0
+## SavedVariables: AMGitsAuctionStats
+
+AMGitsAuctionStats.lua
