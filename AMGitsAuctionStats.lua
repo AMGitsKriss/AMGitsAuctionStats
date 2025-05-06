@@ -8,7 +8,7 @@ local function PrintTable(tbl)
 end
 
 local function GetServerName()
-    return GetRealmName().."-"..GetCVar("portal")
+    return GetRealmName().."-"..GetCVar("portal").."-"..UnitFactionGroup("player")
 end
 
 local function SaveAuctionData()
@@ -18,7 +18,7 @@ local function SaveAuctionData()
             bidAmount, highBidder, bidderFullName, owner, ownerFullName, saleStatus, itemId, hasAllInfo = GetAuctionItemInfo("list", i)
         local rawServerTime = C_DateAndTime.GetCurrentCalendarTime()
         local viewDate = format("%04d-%02d-%02d %02d:00", rawServerTime.year, rawServerTime.month, rawServerTime.monthDay, rawServerTime.hour)
-        print(viewDate)
+
         --print("Auction [" .. i .."]:", itemName, texture, count, quality, canUse, level, levelColHeader, minBid, minIncrement, buyoutPrice, 
         --    bidAmount, highBidder, bidderFullName, owner, ownerFullName, saleStatus, itemId, hasAllInfo)
 
